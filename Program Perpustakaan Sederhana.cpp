@@ -98,8 +98,8 @@ void admin()        //Menu admin//
 	else if (kode==3)keluar();
 	else
     {
-        cout<<"piliha adnda salah !!!!!"<<endl;
-        cout<<"silahkan pilih ulang :";cin>>b; //ketik y untuk kembai ke menu admin dan t untuk keluar//
+        gotoxy(45,17);cout<<"piliha adnda salah !!!!!"<<endl;
+        gotoxy(45,18);cout<<"silahkan pilih ulang :";cin>>b; //ketik y untuk kembai ke menu admin dan t untuk keluar//
         if (b == 'y' || b == 'Y')
         admin();
         keluar();
@@ -123,7 +123,7 @@ void guest()        //menu untuk guest//
 	else if(kode==2) keluar();
 	else
     {
-        cout<<"Salah input silahkan ulangi";
+        gotoxy(45,16)cout<<"Salah input silahkan ulangi";
         gotoxy(45,17);cout << "Coba Lagi? [ Y / T ]"; cin >> c; //Ketil y unyuk mencoba lagi menginput dan ketik t untuk keluar//
         if (c == 'y' || c == 'Y')
         guest();
